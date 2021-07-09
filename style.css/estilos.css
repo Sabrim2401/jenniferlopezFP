@@ -1,0 +1,142 @@
+
+html {
+    font-size: 62.5% ; /*reset para REMS - 62.5% = 10px de 16px (este ultimo era el tamaño por defauld)*/
+} 
+
+h1 {
+    display: inline-block; /* solo resalta las palabras dentro de h1 y no toda el renglon de la pagina*/
+    position: center; 
+    color: #a453ad;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 20px ;
+}
+h1 { font-size: 3.8rem;}
+
+h2 { font-size: 3.4rem; }
+
+h3 { font-size: 3.2rem; }
+
+ul { font-size: 2.4rem; }
+
+p { font-size: 2.8rem; }
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.logo-jlo {
+    height: 150px;
+    margin: 20px 30px;
+    transition: 1s;
+}
+
+.logo-jlo:hover {
+    transform: scale(1.5);
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.barra { display: flex; /* para agregar flexbox y posicionar la barra*/
+    justify-content: space-between; /*es para que haya un espacio entre medio-ALINEA HORIZONTAL*/
+padding-top: 30px; /* desde arriba hace que tome espacio la pagina completa*/ 
+align-items: flex-start /* ALINEA VERTICAL- para que esten alineados en el mismo "renglon" normalmente se usa CENTER, pero como las letras entran en la cara preferi ponerlo de arriba a abajo*/;} 
+
+/*navegacion*/
+.navegacion a {
+    color: white; /* se pone "navegacion + a" porque es padre e hijos */
+    text-decoration: none; /*para sacar el subrayado del vinculo de la barra*/
+    font-size: 18px; /*tamaño fuente del nav*/
+    margin-right: 20px; /*estoy dando un espacio entre cada enlace*/
+}
+
+
+.navegacion a:hover{
+    color: #B057B9 ; /*cambia de color el link*/
+} 
+
+.biografia1 {
+    padding: 20px;
+}
+
+
+/*Orden Discografia*/
+.iconos-discografia {
+    display: flex;
+    justify-content: space-between;
+}
+ul {  list-style: none; }
+
+.discografia {
+
+    flex-basis: calc(33.3% - 1rem); /* es como el width pero de flex*/
+    text-align: center;
+   
+}
+
+body {
+    margin: auto;
+    font-family: 'Kumbh Sans', sans-serif; /*a parte de ponerlo en el head se pone aca asi modifica la fuente*/
+    font-size: 1.6rem;
+    background: rgb(225,179,230);
+background: linear-gradient(0deg, rgba(225,179,230,1) 0%, rgba(239,232,240,1) 100%);  
+/* color de fondo de la pagina*/
+    color: black;
+    
+}
+
+h2 h3 .galeria-h3 {
+    padding: 20px;
+}
+
+
+ .site-header.inicio { background-image: url(../style.css/IMG/FondoHeader.jpg) ; /* el fondo de imagen de la parte superior */
+    height: 100vh; 
+    min-height: 600px; /*medida minima que tomara la pagina si se achica la pantalla*/
+    background-position: center center; /*en este caso, te muestra la imagen desde el centro, pero podes acomodarlo desde donde quieras que parta*/
+    background-size: cover; /*obliga a que la imagen de fondo se vea en toda la pagina*/  }
+
+    .bioografia {
+        text-align: justify;
+    }
+
+    .imagen-inicio {
+        display: inline;
+    }
+
+.contenedor-galeria {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    background: #C693CB;
+    justify-content: center;
+
+}
+.galeria {
+width: 300px;
+height: 200px;
+object-fit: cover; /*para qe la imagen no se pixelee hace qe se expanda y se vea bien*/
+margin-bottom: 30px;
+padding: 10px 60px;
+}
+
+.foto1 {
+    margin-top: 20px;
+}
+.foto2 {
+    margin-top: 20px;
+}
+
+.musica { /*aplico flex para poder centrar los archivos */
+    display: flex;
+    justify-content: center;
+}
